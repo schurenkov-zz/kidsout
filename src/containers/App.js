@@ -61,7 +61,7 @@ class App extends Component {
     const { message } = this.state;
     return <React.Fragment>
               <Header />
-              <main className={classes.main}>
+              <div className={classes.main}>
                   <div className={classes.wrap}>
                     {
                       users ?
@@ -98,7 +98,7 @@ class App extends Component {
                       }
                     </div>
                   </div>
-              </main>
+              </div>
             </React.Fragment>
   }
 }
