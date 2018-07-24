@@ -36,6 +36,13 @@ module.exports = {
               loader: "css-loader" // translates CSS into CommonJS
           }]
       },
+      {
+          test: /\.(png|jpg|gif|svg)$/,
+          loader: "file-loader",
+          options: {
+              outputPath: '/build/img/'
+          }
+      }
     ],
    },
   devtool: "source-map",
