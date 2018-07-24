@@ -23,7 +23,7 @@ module.exports = {
                   options: {
                     babelrc: false,
                     plugins: ['react-hot-loader/babel'],
-                    presets: ['env', 'react'],
+                    presets: ['react-es2015'],
                   }
               }
           ]
