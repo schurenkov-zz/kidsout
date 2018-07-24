@@ -3,5 +3,8 @@ import store from '../store';
 
 export function getDialogs(){
   return axios.get('../data/data.json')
-              .then(result=> { return result.data })
+              .then(result=> {
+                console.log(result);
+                return result.data;
+               })
 }

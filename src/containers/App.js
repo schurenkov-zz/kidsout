@@ -59,6 +59,7 @@ class App extends Component {
   render(){
     const { classes, dialogs, users, messages, activeDialog, currenUser } = this.props;
     const { message } = this.state;
+    console.log(this.props)
     return <React.Fragment>
               <Header />
               <div className={classes.main}>
