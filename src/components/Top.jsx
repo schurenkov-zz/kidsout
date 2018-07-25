@@ -6,7 +6,7 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
-    minHeight: 72
+    height: 72
   },
   button: {
     border: '1px solid #c7c7c7',

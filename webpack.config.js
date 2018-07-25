@@ -6,6 +6,7 @@ module.exports = {
   entry: {
       app: [
           './app.js',
+          "babel-polyfill"
       ],
   },
   output: {
@@ -23,7 +24,7 @@ module.exports = {
                   options: {
                     babelrc: false,
                     plugins: ['react-hot-loader/babel'],
-                    presets: ['react-es2015'],
+                    presets: ['env', 'react'],
                   }
               }
           ]
@@ -35,13 +36,6 @@ module.exports = {
           }, {
               loader: "css-loader" // translates CSS into CommonJS
           }]
-      },
-      {
-          test: /\.(png|jpg|gif|svg)$/,
-          loader: "file-loader",
-          options: {
-              outputPath: '/build/img/'
-          }
       }
     ],
    },
